@@ -1,4 +1,4 @@
-# Championship3
+#  Championship3
 
 ![Vite](https://img.shields.io/badge/Vite-8.x-purple)
 ![Node](https://img.shields.io/badge/Node-%3E%3D22-green)
@@ -9,13 +9,13 @@
 
 ---
 
-## Preview
+##  Preview
 
 *(сюда можно добавить скриншот проекта позже)*
 
 ---
 
-## Установка и запуск
+##  Установка и запуск
 
 ### Установка зависимостей
 
@@ -33,7 +33,7 @@ npm start
 
 ---
 
-## Сборка проекта
+##  Сборка проекта
 
 ```bash
 npm run build
@@ -47,7 +47,7 @@ dist/
 
 ---
 
-## Линтинг
+##  Линтинг
 
 ```bash
 npm run lint
@@ -60,7 +60,7 @@ npm run lint
 
 ---
 
-## Технологии
+##  Технологии
 
 *  Vite
 *  JavaScript (ES Modules)
@@ -99,7 +99,7 @@ championship3/
 
 ---
 
-## 👩‍💻 Автор
+##  Автор
 
 **AnnaGuss**
 https://github.com/AnnaGuss

@@ -4,10 +4,42 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preload" href="#" type="font/woff2" as="font">
+    <link rel="stylesheet" href="styles/styles.scss">
     <title>championship3</title>
   </head>
   <body>
-    championship3
+    <header class="header">
+      <a class="header__logo" href="#">
+        <img src="images/logo.svg" alt="Only digital" />
+      </a>
+
+
+      
+      <nav class="nav nav--closed">
+        <button class="nav__toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+     
+        <div class="nav__wrapper">
+          <div>
+            <ul>
+              <li>Home</li>
+              <li>Projects</li>
+              <li>About</li>
+              <li>Contact</li>
+            </ul>
+  
+          </div>
+        </div>
+        
+      </nav>
+     
+
+
+
+    </header>
+
     <div id="app"></div>
     <script type="module" src="/src/js/main.js"></script>
   </body>
