@@ -5,42 +5,94 @@
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preload" href="#" type="font/woff2" as="font">
-    <link rel="stylesheet" href="styles/styles.scss">
     <title>championship3</title>
   </head>
   <body>
     <header class="header">
-      <a class="header__logo" href="#">
-        <img src="images/logo.svg" alt="Only digital" />
-      </a>
-
-
-      
-      <nav class="nav nav--closed">
-        <button class="nav__toggle" type="button">
-          <span class="visually-hidden">Открыть меню</span>
-        </button>
-     
-        <div class="nav__wrapper">
-          <div>
-            <ul>
-              <li>Home</li>
-              <li>Projects</li>
-              <li>About</li>
-              <li>Contact</li>
-            </ul>
+      <div class="header__wrapper">
+        <a class="header__logo" tabindex="1" href="#">
+          <img src="/src/images/logo.svg" width="127" height="28" alt="spreent" />
+        </a>
+        
+        <nav class="nav nav--closed">
+          <button class="nav__toggle" type="button" aria-label="Открыть меню"></button>
+          <div class="nav__wrapper" inert>
+              <ul class="nav__list">
+                <li class="nav__item">
+                  <a class="nav__link nav__link--current" href="#">
+                    Об академии
+                  </a>
+                </li>
+                <li class="nav__item">
+                  <a class="nav__link" href="#">
+                    Курсы
+                  </a>
+                </li>
+                <li class="nav__item">
+                  <a class="nav__link" href="#">
+                    Корпоративное обучение
+                  </a>
+                </li>
+              </ul>
+          </div>
+        </nav>
   
+        <a class="button" href="#" target="_blank" tabindex="0">Начать</a>
+      </div>
+      
+    </header>
+    <main class="main-container">
+      <h1 class="visually-hidden">Об академия spreent</h1>
+
+      <section class="hero">
+        <div class="hero__wrapper">
+
+          <div class="hero__content">
+            <h2 class="hero__title"> —Опыт, практика,<br/><span>актуальные знания</span></h2>
+            <p class="hero__description">Главные ценности, вокруг которых <br/>строится обучение в&nbsp;spreent</p>
+            <a class="button" href="#" target="_blank">Начать учиться</a>
+          </div>
+          
+          <div class="hero__pictures">
+            <div class="hero__image hero__image--top">
+              <img class="hero__icon" src="/src/images/arrow-artur.svg" width="87" height="51" alt="spreent" />
+              <picture>
+                <source type="image/png" media="(min-width: 1345px)" srcset="src/images/header-photo-artur.png 1x, src/images/header-photo-artur.png 2x" width="329" height="200">
+                <img src="src/images/header-photo-artur-mobile.png" srcset="src/images/header-photo-artur-mobile.png 2x" width="221" height="135" alt="Фотография Артура">
+              </picture>
+            </div>
+            <div class="hero__image hero__image--middle">
+              <picture>
+                <source type="image/png" media="(min-width: 1345px)" srcset="src/images/header-photo-sergey.png 1x, src/images/header-photo-sergey.png 2x" width="175" height="256">
+                <img src="src/images/header-photo-sergey-mobile.png" srcset="src/images/header-photo-sergey-mobile.png 2x" width="117" height="171" alt="Фотография Сергея">
+              </picture>
+              <img class="hero__icon" src="/src/images/arrow-sergey.svg" width="95" height="51" alt="spreent" />
+            </div>
+            <div class="hero__image hero__image--bottom">
+              <picture>
+                <source type="image/png" media="(min-width: 1345px)" srcset="src/images/header-photo-misha.png 1x, src/images/header-photo-misha.png 2x" width="329" height="200">
+                <img src="src/images/header-photo-misha-mobile.png" srcset="src/images/header-photo-misha-mobile.png 2x" width="221" height="135" alt="Фотография Миши">
+              </picture>
+              <img class="hero__icon" src="/src/images/arrow-misha.svg" width="84" height="51" alt="spreent" />
+            </div>
           </div>
         </div>
+
+
+
+
+
         
-      </nav>
-     
+      </section>
+      <section></section>
+      <section></section>
+      <section></section>
+      <section></section>
+      <section></section>
+      <section></section>
+    </main>
 
-
-
-    </header>
-
-    <div id="app"></div>
+    <footer></footer>
     <script type="module" src="/src/js/main.js"></script>
   </body>
 </html>

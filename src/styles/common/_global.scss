@@ -1,0 +1,62 @@
+/* здесь используйте глобальные селекторы img, body, html и так далее */
+@use "./variables" as vars;
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: "Manrope", sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1;
+    // background-color: vars.$background-color;
+    background-color:tomato;
+    color: vars.$base-color-text;
+    height: 3000px;// del
+}
+
+a {
+    text-decoration: none;
+    color: vars.$base-color-text;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.glass-effect {
+    filter: blur(80px);
+    background-color: vars.$background-color;
+    opacity: 70%;
+}
+
+.button {
+    font-family: "LoosWide", sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1;
+    color: vars.$background-color;
+    background-color: vars.$accent;
+    border-radius: 50px;
+}
+

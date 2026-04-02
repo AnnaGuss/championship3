@@ -1,8 +1,16 @@
+// Vendor
+@use "vendor/normalize";
+
 /* GLOBAL */
-@import "./common/variables.scss";
-@import "./common/global.scss";
-@import "./common/mixins.scss";
-@import "./common/fonts.scss";
+@use "./common/variables" as vars;
+@use "./common/global" as global;
+@use "./common/mixins" as mixins;
+@use "./common/fonts" as fonts;
 
 /* BLOCKS */
-@import "./blocks/header.scss";
+
+@use "./blocks/header" as header;
+@use "./blocks/nav" as nav;
+@use "./blocks/main-container" as main;
+@use "./blocks/hero" as hero;
+

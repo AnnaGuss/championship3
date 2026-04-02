@@ -1,0 +1,86 @@
+@use "../common/variables" as vars;
+
+.header {
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+}
+
+.header::before {
+  position: absolute;
+  top: 70px;
+  right: 0;
+  left: 0;
+  height: 1px;
+  z-index: 10;
+  background-color: vars.$base-color-text;
+  opacity: 15%;
+  content: "";
+}
+
+.header__wrapper {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);              
+  z-index: 1000;
+  padding: 0;
+  display: flex;
+  width: 100%;
+  min-width: 480px;
+  margin: 0 auto;
+  align-items: center;
+}
+
+.header__wrapper::after {
+  position: absolute;
+  bottom: 0;
+  right: 68px;
+  height: 70px;
+  width: 1px;
+  z-index: 10;
+  background-color: vars.$base-color-text;
+  opacity: 15%;
+  content: "";
+}
+
+
+
+.header__logo {
+  padding: 17px 15px 13px;
+  z-index: 10;
+}
+
+.header .button {
+  z-index: 10;
+  order: 1;
+  margin-left: auto;
+  margin-right: 19px;
+  padding: 9px 15px 9px 16px;
+}
+
+
+@media (min-width: 970px) {
+  .header__wrapper {
+    max-width: 1440px;
+    width: 100%;
+    height: 70px;
+    background-color: vars.$background-color;
+    justify-content: space-between;
+  }
+
+  .header__wrapper::after {
+    display: none;
+  }
+    
+  .header__logo {
+    padding-left: 40px;
+  }
+
+  .header .button {
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+}
+
+
