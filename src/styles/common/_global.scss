@@ -22,10 +22,10 @@ body {
     font-weight: 500;
     font-size: 18px;
     line-height: 1;
-    // background-color: vars.$background-color;
+    // background-color: vars.$base-color;
     background-color:tomato;
     color: vars.$base-color-text;
-    height: 3000px;// del
+    // height: 3000px;// del
 }
 
 a {
@@ -46,7 +46,7 @@ a {
 
 .glass-effect {
     filter: blur(80px);
-    background-color: vars.$background-color;
+    background-color: vars.$base-color;
     opacity: 70%;
 }
 
@@ -55,7 +55,7 @@ a {
     font-weight: 500;
     font-size: 18px;
     line-height: 1;
-    color: vars.$background-color;
+    color: vars.$base-color;
     background-color: vars.$accent;
     border-radius: 50px;
 }

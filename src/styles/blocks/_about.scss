@@ -1,0 +1,240 @@
+@use "../common/variables" as vars;
+
+.about {
+    
+    display: flex;
+    flex-direction: column;
+    width: 100%;   
+    min-width: 480px;
+    margin: 70px auto 0;
+    background-color: vars.$base-color; // del
+    padding: 0 15px 130px;
+}
+
+.about__title {
+    font-size: 38px;
+    font-family: "LoosWide", sans-serif;
+    font-weight: 500;
+    line-height: 1;
+    letter-spacing: -0.35px;
+    margin-top: 90px;
+    padding-bottom: 40px;
+}
+
+.about__cards {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+}
+
+.about__card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    min-height: 600px;
+    background: radial-gradient(259.81% 137.32% at 0% 3.7%, #002fa8 0%, #001a68 100%);
+    border-radius: 32px;
+    overflow: hidden;
+}
+
+.about__card:first-child .about__content{
+    color: vars.$base-color;
+
+    & br {
+        display: none;
+    }
+}
+
+.about__content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 30px 30px 0;
+    z-index: 2;
+    color: vars.$base-color-text;
+    margin-bottom: 376px;
+}
+
+.about__tag-bubble {
+    font-size: 14px;
+    font-weight: 600;
+    display: inline-block;
+    backdrop-filter: blur(30px);
+    background: rgba(255, 255, 255, 0.2);
+    padding: 10px 17px;
+    border-radius: 100px;
+}
+
+.about__topic {
+    font-size: 30px;
+    font-family: "LoosWide", sans-serif;
+    font-weight: 500;
+    line-height: 1;
+    // letter-spacing: -0.35px;
+    margin-top: 12px;
+    padding-bottom: 15px;
+}
+
+.about__description {
+    display: inline-block;
+    width: 390px;
+    line-height: 1.4;
+    // letter-spacing: -0.35px;
+    padding-bottom: 23px;
+}
+
+.about__image {
+    position: absolute;
+    right: 40px;
+    bottom: 0;
+    width: 348px;
+    height: 377px;
+    margin: 0 0 0 auto;
+}
+
+.about__image img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.about__card:nth-child(2) {
+    background: vars.$decorative;
+
+    & .about__content {
+        margin-bottom: 346px;
+    }
+
+    & .about__tag-bubble {
+        background: rgba(0, 39, 178, 0.06);
+    }
+
+    & .about__image {
+        right: -50px;
+        bottom: -24px;
+        width: 317px;
+        height: 378px;
+    }
+}
+
+.about__card:last-child {
+    background: vars.$secondary-decorative;
+
+    & .about__content {
+        margin-bottom: 376px;
+    }
+
+    & .about__tag-bubble {
+        background: rgba(0, 39, 178, 0.06);
+    }
+
+    & br {
+        display: none;
+    }
+
+    & .about__image {
+        right: -105px;
+        bottom: -58px;
+        width: 439px;
+        height: 439px;
+    }
+}
+
+@media (min-width: 800px) {
+    .about {
+        max-width: 1374px;
+        width: 100%;
+    }
+
+    .about__card {
+        flex-direction: row;
+        min-height: 400px;
+    }
+
+    .about__content,
+    .about__card:last-child .about__content,
+    .about__card:nth-child(2) .about__content {
+        margin-bottom: 0px;
+    }
+}
+
+@media (min-width: 1375px) {
+    .about {
+        max-width: 1440px;
+        width: 100%;
+        padding: 0 40px 130px;
+    }
+
+    .about__title {
+        font-size: 55px;
+        padding-bottom: 60px;
+    }
+
+    .about__cards {
+        gap: 100px;
+    }
+
+    .about__card {
+        width: 785px;
+        min-height: 500px;
+        margin-left: auto;
+        z-index: 1;
+    }
+
+    .about__card:nth-child(2) {
+        top: 14.5%;
+        position: absolute;
+        z-index: 0;
+    }
+
+    .about__card:last-child {
+        margin-right: 100px;
+    }
+
+    .about__content {
+        min-height: 500px;
+        justify-content: space-between;
+    }
+
+    .about__card:first-child .about__topic br,
+    .about__card:last-child .about__topic br {
+        display: block;
+    }
+
+    .about__topic {
+        font-size: 34px;
+    }
+
+    .about__description {
+        display: inline-block;
+        width: 275px;
+        opacity: 70%;
+    }
+
+    .about__card:last-child .about__description {
+        opacity: 1;
+    }
+
+    .about__image {
+        width: 393px;
+        height: 427px;
+    }
+
+    .about__card:nth-child(2) .about__image {
+        right: 60px;
+        bottom: 0px;
+        width: 383px;
+        height: 457px;
+    }
+
+    .about__card:last-child .about__image {
+        right: -90px;
+        top: -90px;
+        bottom: 0px;
+        width: 559px;
+        height: 550px;
+    }
+}
