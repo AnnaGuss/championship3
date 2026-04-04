@@ -51,7 +51,7 @@ nav {
     left: 24px;
     width: 28px;
     height: 2px;
-    background-color: vars.$base-color-text; 
+    background-color: vars.$base-color-text;
   }
 
   &::before {
@@ -68,18 +68,18 @@ nav {
 
 .nav--opened:has(.nav__wrapper) {
   .nav__list {
-  background-color: #ffffff;
-  transition: ease 0.2s;
+    background-color: #ffffff;
+    transition: ease 0.2s;
   }
 }
 
 .nav__wrapper {
   position: fixed;
+  width: 100%;
   top: 0;
   bottom: 0;
   left: 0;
-  right: 0;
-  background: #fff;
+  background: vars.$base-color;
 }
 
 .nav__list {
@@ -96,12 +96,11 @@ nav {
   font-size: 30px;
   font-family: "LoosWide", sans-serif;
   font-weight: 500;
-  
   opacity: 0;
   transform: translateY(-100%);
   transition: all 0.1s ease-in-out;
-  
-  .menuOpen & {
+
+  .menu-open & {
     opacity: 1;
     transform: translateY(0);
   }
@@ -120,7 +119,7 @@ nav {
   }
 
   .nav__toggle {
-    display: none; 
+    display: none;
   }
 
   .nav__wrapper {
@@ -130,14 +129,14 @@ nav {
   }
 
   .nav__list {
-    flex-direction: row; 
+    flex-direction: row;
     padding: 0;
     gap: 20px;
     align-items: center;
   }
 
   .nav__item {
-    opacity: 1; 
+    opacity: 1;
     transform: none;
     font-size: 18px;
   }

@@ -1,3 +1,4 @@
+/* stylelint-disable @stylistic/indentation */
 /* здесь используйте глобальные селекторы img, body, html и так далее */
 @use "./variables" as vars;
 
@@ -23,7 +24,7 @@ body {
     font-size: 18px;
     line-height: 1;
     // background-color: vars.$base-color;
-    background-color:tomato;
+    background-color: #ff6347;
     color: vars.$base-color-text;
     // height: 3000px;// del
 }
