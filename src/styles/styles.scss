@@ -10,9 +10,11 @@
 /* BLOCKS */
 @use "./blocks/header" as header;
 @use "./blocks/nav" as nav;
-@use "./blocks/main-container" as main;
 @use "./blocks/hero" as hero;
 @use "./blocks/about" as about;
 @use "./blocks/community" as community;
 @use "./blocks/price" as price;
 @use "./blocks/work" as work;
+@use "./blocks/certificate" as certificate;
+@use "./blocks/form" as form;
+@use "./blocks/footer-nav" as footer-nav;

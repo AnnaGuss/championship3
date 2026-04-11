@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/src/styles/styles.scss">
     <link rel="preload" href="#" type="font/woff2" as="font">
     <title>championship3</title>
   </head>
@@ -298,19 +299,104 @@
         <div class="certificate__wrapper">
           
           <div class="certificate__content">
-            <h2 class="certificate__title">Получи сертификат <br />об успешном завершении курса</h2>
-            <p class="certificate__text">Обучение ведётся на основании лицензии государственного образца</p>
+            <h2 class="certificate__title">Получи сертификат <br />об успешном <br/>завершении курса</h2>
+            <p class="certificate__description">Обучение ведётся на&nbsp;основании лицензии <br/>государственного образца</p>
             <a href="#" class="button">Начать учиться</a>
           </div>
       
-          <div class="certificate__image-wrapper">
-            <img class="certificate__image" src="images/certificate.png" alt="Сертификат об окончании курса"/>
+          <div class="certificate__image">
+            <picture>
+              <source type="image/jpeg" media="(min-width: 700px)" srcset="src/images/cert.jpg 1x, src/images/cert.jpg 2x" width="660" height="440">
+              <img src="src/images/cert-mobile.jpg" srcset="src/images/cert-mobile.jpg 2x" width="448" height="300" alt="Сертификат об окончании курса">
+            </picture>
           </div>
         </div>
       </section>
 
-      <section class="form"></section>
-      <section class="footer"></section>
+      <section class="form">
+        <div class="form__wrapper">
+          <h2 class="form__title">Сделайте апгрейд карьеры</h2>
+          <form class="form__contact" id="form-contact" action="https://echo.htmlacademy.ru" method="post" novalidate>
+
+            <label class="form__label">
+              <span class="visually-hidden">Имя</span>
+              <input class="form__input" type="text" id="name" name="name" pattern="^[A-Za-zА-Яа-яЁё]+([ -][A-Za-zА-Яа-яЁё]+)*$" required placeholder="Имя">
+              <span class="error-message" id="name-error"></span>
+            </label>
+
+            <label class="form__label">
+              <span class="visually-hidden">Телефон</span>
+              <input class="form__input" type="tel" id="phone" name="phone" pattern="[0-9\s\+\-\(\)]+" required placeholder="Телефон">
+              <span class="error-message" id="phone-error"></span>
+            </label>
+
+            <label class="form__label">
+              <span class="visually-hidden">Email</span>
+              <input class="form__input" type="email" id="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required placeholder="Почта">
+              <span class="error-message" id="email-error"></span>
+            </label>
+
+            <button class="button" type="submit">Оставить заявку</button>
+          </form>
+          <p>Нажимая кнопку &laquo;Оставить заявку&raquo;, вы&nbsp;подтверждаете <br/>согласие на&nbsp;обработку персональных данных</p>
+        </div>
+      </section>
+
+      <section class="footer-nav">
+        <div class="footer-nav__wrapper">
+
+          <div class="footer-nav__content">
+            <a class="footer-nav__logo" href="#">
+              <img src="/src/images/logo-footer.svg" width="267" height="59" alt="Spreent логотип" />
+            </a>
+      
+            <nav class="footer-nav__links">  <!-- del -->
+              <ul class="footer-nav__list">
+                <li class="footer-nav__item">
+                  <a href="#">
+                    Об академии
+                  </a>
+                </li>
+                <li class="footer-nav__item">
+                  <a href="#">
+                    Корпоративное обучение
+                  </a>
+                </li>
+                <li class="footer-nav__item">
+                  <a href="#">
+                    Оплата
+                  </a>
+                </li>
+                <li class="footer-nav__item">
+                  <a href="#">
+                    Личный кабинет
+                  </a>
+                </li>
+                <li class="footer-nav__item">
+                  <a href="#">
+                    Связаться с нами
+                  </a>
+                </li>
+                <li class="footer-nav__item">
+                  <a href="#">
+                    Политика конфиденциальности
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+      
+          <div class="footer-nav__bottom">
+            <p>Академия Богдана Гончаренко © 2024</p>
+      
+            <a class="footer-nav__logo-dev" href="#">
+              <span>by</span>
+              <img src="/src/images/logo-mish.svg" width="85" height="30" alt="Mish логотип" />
+            </a>
+          </div>
+
+        </div>
+      </section>
     </footer>
     <script type="module" src="/src/js/main.js"></script>
   </body>

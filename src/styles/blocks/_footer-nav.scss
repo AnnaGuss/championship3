@@ -1,0 +1,122 @@
+@use "../common/variables" as vars;
+
+.footer-nav {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  // min-width: 480px;
+  margin: 0 auto 40px;
+  padding: 0;
+}
+
+.footer-nav::before {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 1px;
+  background-color: rgba(vars.$base-color, 0.15);
+  content: "";
+}
+
+.footer-nav__wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-width: 480px;
+  gap: 90px;
+  padding: 40px 15px 0;
+  margin: 0 auto;
+}
+
+.footer-nav__content {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.footer-nav__list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-nav__item a {
+  font-family: "LoosWide", sans-serif;
+  font-weight: 500;
+  line-height: 1.4;
+  color: vars.$base-color;
+  // transition: color 0.2s ease;
+}
+
+.footer-nav__bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  font-weight: 600;
+  font-size: 14px;
+  color: rgba(vars.$base-color, 0.5);
+}
+
+.footer-nav__logo-dev {
+  display: flex;
+  align-items: flex-end;
+  min-height: 41px;
+  gap: 4px;
+}
+
+.footer-nav__logo-dev span {
+  color: rgba(vars.$base-color, 0.5);
+  margin: 0 0 auto;
+}
+
+
+@media (min-width: 768px) {
+  .footer-nav__wrapper {
+    max-width: 1023px;
+  }
+
+  .footer-nav__content {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 85px;
+  }
+
+  .footer-nav__logo-dev {
+    margin: 0 auto 0 87px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .footer-nav__wrapper {
+    max-width: 1440px;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  .footer-nav__content {
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    max-width: 1222px;
+    gap: 0;
+  }
+
+  .footer-nav__list {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 15px 98px;
+  }
+
+  .footer-nav__bottom {
+    max-width: 1020px;
+  }
+
+  .footer-nav__logo-dev {
+    margin: 0;
+  }
+}

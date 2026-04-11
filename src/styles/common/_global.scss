@@ -61,3 +61,20 @@ a {
     border-radius: 50px;
 }
 
+.main-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-width: 480px;
+    margin: 0 auto;
+}
+
+footer {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background-color: vars.$base-color-text;
+    width: 100%;
+    min-width: 480px;
+    margin: 0 auto;
+}

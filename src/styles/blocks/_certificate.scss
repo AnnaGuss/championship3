@@ -1,0 +1,143 @@
+@use "../common/variables" as vars;
+
+.certificate {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-width: 480px;
+  margin: 0 auto;
+  padding: 0;
+  background-color: vars.$base-color; // del
+}
+
+.certificate__wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 496px;
+  background-color: vars.$secondary-decorative;
+}
+
+.certificate__content {
+  padding: 30px 15px 55px;
+}
+
+.certificate__title {
+  font-size: 38px;
+  font-family: "LoosWide", sans-serif;
+  font-weight: 500;
+  line-height: 1;
+  letter-spacing: -0.35px;
+  padding-bottom: 20px;
+}
+
+.certificate__description {
+  line-height: 1.4;
+  opacity: 70%;
+  padding-bottom: 25px;
+}
+
+.certificate__content .button {
+  display: inline-block;
+  padding: 16px 25px;
+}
+
+.certificate__image {
+  position: absolute;
+  bottom: -50%;
+  left: 50%;
+  transform: translate(-50%, -35%);
+}
+
+.certificate__image img {
+  display: block;
+  border-radius: 16px;
+}
+
+@media (min-width: 700px) {
+  .certificate {
+    // position: relative;
+    max-width: 1199px;
+    min-height: 420px;
+    margin: 0 auto;
+  }
+
+  .certificate__wrapper {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    min-width: 94%;
+    min-height: 582px;
+    border-radius: 32px;
+  }
+
+  .certificate__content {
+    padding: 30px 0 30px 30px;
+    width: 450px;
+  }
+
+  .certificate__image {
+    transform: translate(-50%, -20%);
+  }
+}
+
+@media (min-width: 1200px) {
+  .certificate {
+    max-width: 1249px;
+    min-height: 251px;
+    padding: 0 40px;
+  }
+
+  .certificate__wrapper {
+    flex-direction: row;
+    justify-content: space-between;
+    min-height: 500px;
+  }
+
+  .certificate__image {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    transform: translate(0, 0);
+    padding: 30px 30px 30px 0;
+  }
+}
+
+
+@media (min-width: 1250px) {
+  .certificate {
+    max-width: 1440px;
+    background-color: vars.$base-color-text; // del
+  }
+
+  .certificate__wrapper {
+    bottom: -50%;
+    left: 50%;
+    transform: translate(-50%, -26%);
+  }
+
+  .certificate__content {
+    width: 515px;
+  }
+
+  .certificate__title {
+    font-size: 46px;
+    font-family: "LoosWide", sans-serif;
+    font-weight: 500;
+    line-height: 1;
+    letter-spacing: 0;
+    padding-bottom: 20px;
+  }
+
+  .certificate__description {
+    line-height: 1.4;
+    opacity: 70%;
+    padding-bottom: 25px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .certificate__wrapper {
+    width: 1360px;
+  }
+}

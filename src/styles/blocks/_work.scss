@@ -6,6 +6,7 @@
   width: 100%;
   min-width: 480px;
   margin: 0 auto;
+  margin-bottom: 50px;
   background-color: vars.$base-color; // del
   padding: 0;
 }
@@ -296,6 +297,12 @@
   .work__description {
     font-size: 24px;
     line-height: 1.43;
+  }
+}
+
+@media (min-width: 1250px) {
+  .work {
+    margin-bottom: 300px;
   }
 }
 
