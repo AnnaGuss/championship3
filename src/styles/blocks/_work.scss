@@ -6,32 +6,32 @@
   width: 100%;
   min-width: 480px;
   margin: 0 auto;
-  margin-bottom: 50px;
+  margin-bottom: 63px;
   padding: 0;
 }
 
 .work__content {
-  padding: 60px 15px;
+  padding: 60.5px 15px;
 }
 
 .work__title {
   font-size: 38px;
   font-family: "LoosWide", sans-serif;
   font-weight: 500;
-  line-height: 1;
-  letter-spacing: -0.35px;
-  padding-bottom: 20px;
+  line-height: 0.98;
+  letter-spacing: -0.4px;
+  padding-bottom: 19px;
 }
 
 .work__description {
   line-height: 1.4;
   opacity: 70%;
-  padding-bottom: 25px;
+  padding-bottom: 24px;
 }
 
 .work__content .button {
   display: inline-block;
-  padding: 16px 25px;
+  padding: 18px 25px 19px 26px;
 }
 
 .work__list {
@@ -280,7 +280,7 @@
 
 @media (min-width: 1250px) {
   .work {
-    margin-bottom: 300px;
+    margin-bottom: 269px;
   }
 }
 
@@ -288,6 +288,10 @@
   .work {
     max-width: 1440px;
     min-height: 878px;
+  }
+
+  .work__wrapper {
+    margin-top: 120px;
   }
 
   .work__description {

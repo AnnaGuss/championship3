@@ -5,7 +5,7 @@
   flex-direction: column;
   width: 100%;
   min-width: 480px;
-  margin: 230px auto 90px;
+  margin: 241px auto 90px;
   // background-color: #d76ed5; // del
   padding: 0;
 }
@@ -18,17 +18,17 @@
   font-size: 38px;
   font-family: "LoosWide", sans-serif;
   font-weight: 500;
-  line-height: 1;
-  letter-spacing: -0.35px;
+  line-height: 0.98;
+  letter-spacing: -0.38px;
   color: vars.$base-color;
-  padding-bottom: 40px;
+  padding-bottom: 38px;
 }
 
 .form__contact {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 10px;
+  gap: 6.3px;
   margin-bottom: 40px;
 }
 
@@ -45,7 +45,7 @@
 }
 
 .form__input {
-  padding: 15px 25px;
+  padding: 16px 25px 17px;
   min-width: 450px;
   max-width: 600px;
   width: 100%;
@@ -75,7 +75,7 @@
   background-color: vars.$decorative;
   color: vars.$base-color-text;
   border: none;
-  padding: 16px 25px;
+  padding: 18px 26px 19px 25px;
   cursor: pointer;
   text-align: center;
   margin-top: 5px;
@@ -106,7 +106,7 @@
   font-size: 14px;
   font-weight: 600;
   line-height: 1.3;
-  letter-spacing: 0.35px;
+  letter-spacing: 0.14px;
   color: rgba(vars.$base-color, 0.5);
 }
 
@@ -128,22 +128,27 @@
   }
 
   .form__title {
+    display: inline-block;
     font-size: 55px;
-    // line-height: 1;
-    // letter-spacing: -0.35px;
+    line-height: 0.96;
+    letter-spacing: -0.55px;
+    padding-bottom: 39px;
   }
 
   .form__contact {
     flex-direction: row;
     gap: 5px;
+    margin-bottom: 37px;
   }
 
   .form__input {
     min-width: 20px;
+    padding: 16px 25px;
   }
 
   .form__contact .button {
-    min-width: 210px;
+    min-width: 210.5px;
+    margin: 0;
   }
 }
 

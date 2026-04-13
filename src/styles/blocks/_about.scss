@@ -14,10 +14,10 @@
   font-size: 38px;
   font-family: "LoosWide", sans-serif;
   font-weight: 500;
-  line-height: 1;
-  letter-spacing: -0.35px;
+  line-height: 0.98;
+  letter-spacing: -0.38px;
   margin-top: 90px;
-  padding-bottom: 40px;
+  padding-bottom: 39px;
 }
 
 .about__cards {
@@ -60,10 +60,11 @@
 .about__tag-bubble {
   font-size: 14px;
   font-weight: 600;
+  letter-spacing: 0.05px;
   display: inline-block;
   backdrop-filter: blur(30px);
   background: rgba(255, 255, 255, 0.2);
-  padding: 10px 17px;
+  padding: 9px 18px;
   border-radius: 100px;
 }
 
@@ -71,25 +72,24 @@
   font-size: 30px;
   font-family: "LoosWide", sans-serif;
   font-weight: 500;
-  line-height: 1;
-  // letter-spacing: -0.35px;
-  margin-top: 12px;
-  padding-bottom: 15px;
+  line-height: 1.02;
+  margin-top: 13px;
+  padding-bottom: 14px;
 }
 
 .about__description {
   display: inline-block;
   width: 390px;
-  line-height: 1.4;
+  line-height: 1.39;
   // letter-spacing: -0.35px;
   padding-bottom: 23px;
 }
 
 .about__image {
   position: absolute;
-  right: 40px;
-  bottom: 0;
-  width: 348px;
+  right: 33px;
+  bottom: 1px;
+  width: 354px;
   height: 377px;
   margin: 0 0 0 auto;
 }
@@ -112,8 +112,8 @@
   }
 
   & .about__image {
-    right: -50px;
-    bottom: -24px;
+    right: -42px;
+    bottom: -23px;
     width: 317px;
     height: 378px;
   }
@@ -136,7 +136,7 @@
 
   & .about__image {
     right: -105px;
-    bottom: -58px;
+    bottom: -57px;
     width: 439px;
     height: 439px;
   }
@@ -169,7 +169,10 @@
 
   .about__title {
     font-size: 55px;
-    padding-bottom: 60px;
+    line-height: 0.97;
+    letter-spacing: -0.55px;
+    margin-top: 91.5px;
+    padding-bottom: 59px;
   }
 
   .about__cards {
@@ -190,7 +193,7 @@
   }
 
   .about__card:last-child {
-    margin-right: 100px;
+    margin-right: 116px;
   }
 
   .about__content {
@@ -205,12 +208,15 @@
 
   .about__topic {
     font-size: 34px;
+    line-height: 1.03;
+    margin-top: 12px;
   }
 
   .about__description {
     display: inline-block;
     width: 275px;
     opacity: 70%;
+    margin-bottom: 7px;
   }
 
   .about__card:last-child .about__description {
@@ -218,12 +224,14 @@
   }
 
   .about__image {
-    width: 393px;
+    width: 400px;
     height: 427px;
+    right: 38px;
+    bottom: 0;
   }
 
   .about__card:nth-child(2) .about__image {
-    right: 60px;
+    right: 77px;
     bottom: 0;
     width: 383px;
     height: 457px;
@@ -231,7 +239,7 @@
 
   .about__card:last-child .about__image {
     right: -90px;
-    top: -90px;
+    top: -92.5px;
     bottom: 0;
     width: 559px;
     height: 550px;
