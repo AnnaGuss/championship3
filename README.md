@@ -101,7 +101,7 @@ championship3/
 
 ##  Автор
 
-**AnnaGusarova**
+**Anna Gusarova**
 https://github.com/AnnaGuss
 
 

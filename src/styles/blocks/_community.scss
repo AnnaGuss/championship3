@@ -86,6 +86,29 @@
   }
 }
 
+.community__avatar--add:focus {
+  outline: 2px solid vars.$decorative;
+}
+
+.community__avatar--add:hover {
+  opacity: 0.75;
+}
+
+.community__avatar--add:active {
+  transform: scale(0.95);
+  transition: ease 0.3s;
+}
+
+.community__avatar--disabled {
+  pointer-events: none;
+  border: 2px solid vars.$disabled;
+
+  &::before,
+  &::after {
+    background-color: vars.$disabled;
+  }
+}
+
 .community__quantity {
   padding-top: 20px;
   padding-bottom: 5px;

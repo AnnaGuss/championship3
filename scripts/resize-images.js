@@ -14,7 +14,7 @@ const files = fs.readdirSync(inputDir);
 files.forEach(async (file) => {
   const filePath = path.join(inputDir, file);
 
-  if (!file.match(/\.(jpg|jpeg|png)$/)) {return;}
+  if (!file.match(/\.(jpg|jpeg|png)$/i)) return;
 
   const image = sharp(filePath);
   const metadata = await image.metadata();
@@ -22,14 +22,34 @@ files.forEach(async (file) => {
   const width = metadata.width;
   const height = metadata.height;
 
-  // @2x (оригинал)
-  await image
-    .toFile(path.join(outputDir, file.replace('.', '@2x.')));
+  const name = path.parse(file).name;
 
-  // @1x (в 2 раза меньше)
+  // ORIGINAL (@2x)
+  await image.toFile(
+    path.join(outputDir, `${name}@2x${path.extname(file)}`)
+  );
+
+  // RESIZED (@1x)
   await image
     .resize(Math.round(width / 2), Math.round(height / 2))
-    .toFile(path.join(outputDir, file.replace('.', '@1x.')));
+    .toFile(
+      path.join(outputDir, `${name}@1x${path.extname(file)}`)
+    );
+
+  // WEBP @2x
+  await image
+    .webp({ quality: 80 })
+    .toFile(
+      path.join(outputDir, `${name}@2x.webp`)
+    );
+
+  // WEBP @1x
+  await image
+    .resize(Math.round(width / 2), Math.round(height / 2))
+    .webp({ quality: 80 })
+    .toFile(
+      path.join(outputDir, `${name}@1x.webp`)
+    );
 
   console.log(`✔ обработано: ${file}`);
 });

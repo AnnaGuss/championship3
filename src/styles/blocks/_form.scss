@@ -56,6 +56,19 @@
   outline: none;
   // transition: border-color 0.3s;
   background-color: rgba(vars.$base-color, 0.2);
+  transition: all 0.3s ease;
+}
+
+.form__input:focus {
+  outline: 1px solid rgba(vars.$decorative, 0.75);
+}
+
+.form__input:hover {
+  background-color: rgba(vars.$base-color, 0.25);
+}
+
+.form__input:active {
+  transform: scale(0.99);
 }
 
 .form__contact .button {
@@ -66,6 +79,16 @@
   cursor: pointer;
   text-align: center;
   margin-top: 5px;
+}
+
+.form__contact .button--state:focus {
+  outline: 2px solid vars.$accent;
+}
+
+.form__contact .button--state:disabled {
+  pointer-events: none;
+  opacity: 0.75;
+  background-color: vars.$disabled;
 }
 
 .form__input.invalid {

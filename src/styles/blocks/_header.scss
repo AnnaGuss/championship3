@@ -49,6 +49,19 @@
   z-index: 10;
 }
 
+.header__logo:focus {
+  outline: 1px solid vars.$decorative;
+}
+
+.header__logo:hover {
+  opacity: 0.75;
+}
+
+.header__logo:active {
+  transform: scale(0.98);
+  transition: ease 0.3s;
+}
+
 .header .button {
   z-index: 10;
   order: 1;

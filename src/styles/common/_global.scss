@@ -23,10 +23,8 @@ body {
     font-weight: 500;
     font-size: 18px;
     line-height: 1;
-    // background-color: vars.$base-color;
-    background-color: #ff6347;
+    background-color: vars.$base-color;
     color: vars.$base-color-text;
-    // height: 3000px;// del
 }
 
 a {
@@ -59,6 +57,24 @@ a {
     color: vars.$base-color;
     background-color: vars.$accent;
     border-radius: 50px;
+}
+
+.button--state:focus {
+    outline: 2px solid vars.$decorative;
+}
+
+.button--state:hover {
+    opacity: 0.75;
+}
+
+.button--state:active {
+    transform: scale(0.95);
+    transition: ease 0.3s;
+}
+
+.button--disabled {
+    pointer-events: none;
+    background-color: vars.$disabled;
 }
 
 .main-container {

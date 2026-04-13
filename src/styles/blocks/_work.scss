@@ -7,7 +7,6 @@
   min-width: 480px;
   margin: 0 auto;
   margin-bottom: 50px;
-  background-color: vars.$base-color; // del
   padding: 0;
 }
 
@@ -199,25 +198,35 @@
 
   .work__item--sber {
     border-left: 0.66px solid vars.$line-color;
+    grid-column: 6;
+    grid-row: 1;
   }
 
   .work__item--rustore {
     border-right: 0;
+    grid-column: 6;
+    grid-row: 2;
   }
 
   .work__item--mish {
     border-left: 0;
     margin-top: -1px;
+    grid-column: 1;
+    grid-row: 3;
   }
 
   .work__item--chulakov {
     margin-top: -1px;
+    grid-column: 2;
+    grid-row: 3;
   }
 
   .work__item--vc {
     border-top: 0.66px solid vars.$line-color;
     border-left: 0.66px solid vars.$line-color;
     margin-top: -1px;
+    grid-column: 3;
+    grid-row: 3;
   }
 
   .work__item--epam {
@@ -225,9 +234,10 @@
     border-right: 0.66px solid vars.$line-color;
     margin-right: -1px;
     margin-top: -1px;
+    grid-column: 4;
+    grid-row: 3;
   }
 
-  /* 1 ряд */
   .work__item--vtb {
     grid-column: 4;
     grid-row: 1;
@@ -238,41 +248,9 @@
     grid-row: 1;
   }
 
-  .work__item--sber {
-    grid-column: 6;
-    grid-row: 1;
-  }
-
-  /* 2 ряд */
   .work__item--sportmaster {
     grid-column: 5;
     grid-row: 2;
-  }
-
-  .work__item--rustore {
-    grid-column: 6;
-    grid-row: 2;
-  }
-
-  /* 3 ряд */
-  .work__item--mish {
-    grid-column: 1;
-    grid-row: 3;
-  }
-
-  .work__item--chulakov {
-    grid-column: 2;
-    grid-row: 3;
-  }
-
-  .work__item--vc {
-    grid-column: 3;
-    grid-row: 3;
-  }
-
-  .work__item--epam {
-    grid-column: 4;
-    grid-row: 3;
   }
 }
 

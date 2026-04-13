@@ -18,6 +18,14 @@ nav {
   padding: 22px;
 }
 
+.nav__toggle:focus {
+  outline: 1px solid vars.$decorative;
+}
+
+.nav__toggle:hover {
+  opacity: 0.75;
+}
+
 .nav--closed .nav__toggle {
   &::before,
   &::after {
@@ -36,10 +44,6 @@ nav {
   &::after {
     top: 42px;
   }
-}
-
-.nav__toggle:active {
-  background-color: transparent;
 }
 
 .nav--opened .nav__toggle {
@@ -110,6 +114,32 @@ nav {
   padding-bottom: 36px;
 }
 
+.nav__link--current {
+  pointer-events: none;
+  opacity: 0.75;
+}
+
+.nav__link {
+  display: inline-block;
+}
+
+.nav__link:focus {
+  outline: 1px solid vars.$decorative;
+}
+
+.nav__link:hover {
+  opacity: 0.75;
+}
+
+.nav__link:active {
+  transform: scale(0.95);
+  transition: ease 0.3s;
+}
+
+.nav__link--disabled {
+  pointer-events: none;
+  color: vars.$disabled;
+}
 
 @media (min-width: 970px) {
   .nav {

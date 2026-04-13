@@ -1,9 +1,12 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8"/>
+    <link rel="icon" href="/favicon.ico" sizes="any">
+    <link rel="icon" type="image/png" href="/favicon-32x32.png">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <link rel="stylesheet" href="/src/styles/styles.scss">
     <link rel="preload" href="#" type="font/woff2" as="font">
     <title>championship3</title>
@@ -12,11 +15,11 @@
     <header class="header">
       <div class="header__wrapper">
         <a class="header__logo" tabindex="1" href="#">
-          <img src="/src/images/logo.svg" width="127" height="28" alt="spreent" />
+          <img src="/src/images/optimized/logo.svg" width="127" height="28" alt="Логотип академии Spreent"/>
         </a>
         
         <nav class="nav nav--closed">
-          <button class="nav__toggle" type="button" aria-label="Открыть меню"></button>
+          <button class="nav__toggle" type="button" aria-label="Открыть/Закрыть меню"></button>
           <div class="nav__wrapper" inert>
               <ul class="nav__list">
                 <li class="nav__item">
@@ -38,7 +41,7 @@
           </div>
         </nav>
   
-        <a class="button" href="#" target="_blank" tabindex="0">Начать</a>
+        <a class="button button--state" href="#section-form" target="_blank" tabindex="0">Начать</a>
       </div>
       
     </header>
@@ -51,36 +54,42 @@
           <div class="hero__content">
             <h2 class="hero__title"> —Опыт, практика,<br/><span>актуальные знания</span></h2>
             <p class="hero__description">Главные ценности, вокруг которых <br/>строится обучение в&nbsp;spreent</p>
-            <a class="button" href="#" target="_blank">Начать учиться</a>
+            <a class="button button--state" href="#section-form" target="_blank">Начать учиться</a>
           </div>
           
           <div class="hero__pictures">
             <div class="hero__image hero__image--top">
-              <img class="hero__icon" src="/src/images/arrow-artur.svg" width="87" height="51" alt="spreent" />
+              <img class="hero__icon" src="/src/images/optimized/arrow-artur.svg" width="87" height="51" alt="Курсор с подписью Артур" />
               <div class="hero__picture">
                 <picture>
-                  <source type="image/jpeg" media="(min-width: 1345px)" srcset="src/images/header-photo-artur.jpg 1x, src/images/header-photo-artur.jpg 2x" width="329" height="200">
-                  <img src="src/images/header-photo-artur-mobile.jpg" srcset="src/images/header-photo-artur-mobile.jpg 2x" width="221" height="135" alt="Фотография Артура">
+                  <source type="image/webp" media="(min-width: 1345px)" srcset="src/images/optimized/header-photo-artur@1x.webp 1x, src/images/optimized/header-photo-artur@2x.webp 2x" width="329" height="200">
+                  <source type="image/jpeg" media="(min-width: 1345px)" srcset="src/images/optimized/header-photo-artur@1x.jpg 1x, src/images/optimized/header-photo-artur@2x.jpg 2x" width="329" height="200">
+                  <source type="image/webp" srcset="src/images/optimized/header-photo-artur-mobile@1x.webp 1x, src/images/optimized/header-photo-artur-mobile@2x.webp 2x" width="221" height="135">
+                  <img src="src/images/optimized/header-photo-artur-mobile@1x.jpg" srcset="src/images/optimized/header-photo-artur-mobile@2x.jpg 2x" width="221" height="135" alt="Фотография Артура">
                 </picture>
               </div>
             </div>
             <div class="hero__image hero__image--middle">
               <div class="hero__picture">
                 <picture>
-                  <source type="image/jpeg" media="(min-width: 1345px)" srcset="src/images/header-photo-sergey.jpg 1x, src/images/header-photo-sergey.jpg 2x" width="175" height="256">
-                  <img src="src/images/header-photo-sergey-mobile.jpg" srcset="src/images/header-photo-sergey-mobile.jpg 2x" width="117" height="171" alt="Фотография Сергея">
+                  <source type="image/webp" media="(min-width: 1345px)" srcset="src/images/optimized/header-photo-sergey@1x.webp 1x, src/images/optimized/header-photo-sergey@2x.webp 2x" width="175" height="256">
+                  <source type="image/jpeg" media="(min-width: 1345px)" srcset="src/images/optimized/header-photo-sergey@1x.jpg 1x, src/images/optimized/header-photo-sergey@2x.jpg 2x" width="175" height="256">
+                  <source type="image/webp" srcset="src/images/optimized/header-photo-sergey-mobile@1x.webp 1x, src/images/optimized/header-photo-sergey-mobile@2x.webp 2x" width="117" height="171">
+                  <img src="src/images/optimized/header-photo-sergey-mobile@1x.jpg" srcset="src/images/optimized/header-photo-sergey-mobile@2x.jpg 2x" width="117" height="171" alt="Фотография Сергея">
                 </picture>
               </div>
-              <img class="hero__icon" src="/src/images/arrow-sergey.svg" width="95" height="51" alt="spreent" />
+              <img class="hero__icon" src="/src/images/optimized/arrow-sergey.svg" width="95" height="51" alt="Курсор с подписью Сергей" />
             </div>
             <div class="hero__image hero__image--bottom">
               <div class="hero__picture">
                 <picture>
-                  <source type="image/jpeg" media="(min-width: 1345px)" srcset="src/images/header-photo-misha.jpg 1x, src/images/header-photo-misha.jpg 2x" width="329" height="200">
-                  <img src="src/images/header-photo-misha-mobile.jpg" srcset="src/images/header-photo-misha-mobile.jpg 2x" width="221" height="135" alt="Фотография Миши">
+                  <source type="image/webp" media="(min-width: 1345px)" srcset="src/images/optimized/header-photo-misha@1x.webp 1x, src/images/optimized/header-photo-misha@2x.webp 2x" width="329" height="200">
+                  <source type="image/jpeg" media="(min-width: 1345px)" srcset="src/images/optimized/header-photo-misha@1x.jpg 1x, src/images/optimized/header-photo-misha@2x.jpg 2x" width="329" height="200">
+                  <source type="image/webp" srcset="src/images/optimized/header-photo-misha-mobile@1x.webp 1x, src/images/optimized/header-photo-misha-mobile@2x.webp 2x" width="221" height="135">
+                  <img src="src/images/optimized/header-photo-misha-mobile@1x.jpg" srcset="src/images/optimized/header-photo-misha-mobile@2x.jpg 2x" width="221" height="135" alt="Фотография Миши">
                 </picture>
               </div>
-              <img class="hero__icon" src="/src/images/arrow-misha.svg" width="84" height="51" alt="spreent" />
+              <img class="hero__icon" src="/src/images/optimized/arrow-misha.svg" width="84" height="51" alt="Курсор с подписью Миша" />
             </div>
           </div>
         </div>
@@ -105,8 +114,10 @@
             </div>
             <div class="about__image">
               <picture>
-                <source type="image/png" media="(min-width: 1375px)" srcset="src/images/skills.png 1x, src/images/skills.png 2x" width="393" height="427">
-                <img src="src/images/skills-mobile.png" srcset="src/images/skills-mobile.png 2x" width="348" height="377" alt="Фотография Миши">
+                <source type="image/webp" media="(min-width: 1375px)" srcset="src/images/optimized/skills@1x.webp 1x, src/images/optimized/skills@2x.webp 2x" width="393" height="427">
+                <source type="image/png" media="(min-width: 1375px)" srcset="src/images/optimized/skills@1x.png 1x, src/images/optimized/skills@2x.png 2x" width="393" height="427">
+                <source type="image/webp" srcset="src/images/optimized/skills-mobile@1x.webp 1x, src/images/optimized/skills-mobile@2x.webp 2x" width="348" height="377">
+                <img src="src/images/optimized/skills-mobile@1x.png" srcset="src/images/optimized/skills-mobile@2x.png 2x" width="348" height="377" alt="Элементы интерфейса: круг и прямоугольник с одним закругленным углом, курсор с подписью you и курсор-рука с подписью UX Lead">
               </picture>
             </div>
           </div>
@@ -127,8 +138,10 @@
             </div>
             <div class="about__image">
               <picture>
-                <source type="image/png" media="(min-width: 1375px)" srcset="src/images/teacher.png 1x, src/images/teacher.png 2x" width="383" height="457">
-                <img src="src/images/teacher-mobile.png" srcset="src/images/teacher-mobile.png 2x" width="317" height="378" alt="Фотография Миши">
+                <source type="image/webp" media="(min-width: 1375px)" srcset="src/images/optimized/teacher@1x.webp 1x, src/images/optimized/teacher@2x.webp 2x" width="383" height="457">
+                <source type="image/png" media="(min-width: 1375px)" srcset="src/images/optimized/teacher@1x.png 1x, src/images/optimized/teacher@2x.png 2x" width="383" height="457">
+                <source type="image/webp" srcset="src/images/optimized/teacher-mobile@1x.webp 1x, src/images/optimized/teacher-mobile@2x.webp 2x" width="317" height="378">
+                <img src="src/images/optimized/teacher-mobile@1x.png" srcset="src/images/optimized/teacher-mobile@2x.png 2x" width="317" height="378" alt="Фотография опытного преподователя">
               </picture>
             </div>
           </div>
@@ -149,8 +162,10 @@
             </div>
             <div class="about__image">
               <picture>
-                <source type="image/png" media="(min-width: 1375px)" srcset="src/images/knowledge.png 1x, src/images/knowledge.png 2x" width="559" height="550">
-                <img src="src/images/knowledge-mobile.png" srcset="src/images/knowledge-mobile.png 2x" width="439" height="439" alt="Фотография Миши">
+                <source type="image/webp" media="(min-width: 1375px)" srcset="src/images/optimized/knowledge@1x.webp 1x, src/images/optimized/knowledge@2x.webp 2x" width="559" height="550">
+                <source type="image/png" media="(min-width: 1375px)" srcset="src/images/optimized/knowledge@1x.png 1x, src/images/optimized/knowledge@2x.png 2x" width="559" height="550">
+                <source type="image/webp" srcset="src/images/optimized/knowledge-mobile@1x.webp 1x, src/images/optimized/knowledge-mobile@2x.webp 2x" width="439" height="439">
+                <img src="src/images/optimized/knowledge-mobile@1x.png" srcset="src/images/optimized/knowledge-mobile@2x.png 2x" width="439" height="439" alt="Логотип академии Spreent">
               </picture>
             </div>
           </div>
@@ -166,29 +181,37 @@
             <div class="community__avatars">
               <div class="community__avatar" >
                 <picture>
-                  <source type="image/jpeg" media="(min-width: 1375px)" srcset="src/images/avatar-1.jpg 1x, src/images/avatar-1.jpg 2x" width="120" height="120">
-                  <img src="src/images/avatar-1-mobile.jpg" srcset="src/images/avatar-1-mobile.jpg 2x" width="90" height="90" alt="Фотография Миши">
+                  <source type="image/webp" media="(min-width: 1375px)" srcset="src/images/optimized/avatar-1@1x.webp 1x, src/images/optimized/avatar-1@2x.webp 2x" width="120" height="120">
+                  <source type="image/jpeg" media="(min-width: 1375px)" srcset="src/images/optimized/avatar-1@1x.jpg 1x, src/images/optimized/avatar-1@2x.jpg 2x" width="120" height="120">
+                  <source type="image/webp" srcset="src/images/optimized/avatar-1-mobile@1x.webp 1x, src/images/optimized/avatar-1-mobile@2x.webp 2x" width="90" height="90">
+                  <img src="src/images/optimized/avatar-1-mobile@1x.jpg" srcset="src/images/optimized/avatar-1-mobile@2x.jpg 2x" width="90" height="90" alt="Аватарка выпускника">
                 </picture>
               </div>
               <div class="community__avatar community__avatar--mask">
                 <picture>
-                  <source type="image/jpeg" media="(min-width: 1375px)" srcset="src/images/avatar-2.jpg 1x, src/images/avatar-2.jpg 2x" width="120" height="120">
-                  <img src="src/images/avatar-2-mobile.jpg" srcset="src/images/avatar-2-mobile.jpg 2x" width="90" height="90" alt="Фотография Миши">
+                  <source type="image/webp" media="(min-width: 1375px)" srcset="src/images/optimized/avatar-2@1x.webp 1x, src/images/optimized/avatar-2@2x.webp 2x" width="120" height="120">
+                  <source type="image/jpeg" media="(min-width: 1375px)" srcset="src/images/optimized/avatar-2@1x.jpg 1x, src/images/optimized/avatar-2@2x.jpg 2x" width="120" height="120">
+                  <source type="image/webp" srcset="src/images/optimized/avatar-2-mobile@1x.webp 1x, src/images/optimized/avatar-2-mobile@2x.webp 2x" width="90" height="90">
+                  <img src="src/images/optimized/avatar-2-mobile@1x.jpg" srcset="src/images/optimized/avatar-2-mobile@2x.jpg 2x" width="90" height="90" alt="Аватарка выпускника">
                 </picture>
               </div>
               <div class="community__avatar community__avatar--mask">
                 <picture>
-                  <source type="image/jpeg" media="(min-width: 1375px)" srcset="src/images/avatar-3.jpg 1x, src/images/avatar-3.jpg 2x" width="120" height="120">
-                  <img src="src/images/avatar-3-mobile.jpg" srcset="src/images/avatar-3-mobile.jpg 2x" width="90" height="90" alt="Фотография Миши">
+                  <source type="image/webp" media="(min-width: 1375px)" srcset="src/images/optimized/avatar-3@1x.webp 1x, src/images/optimized/avatar-3@2x.webp 2x" width="120" height="120">
+                  <source type="image/jpeg" media="(min-width: 1375px)" srcset="src/images/optimized/avatar-3@1x.jpg 1x, src/images/optimized/avatar-3@2x.jpg 2x" width="120" height="120">
+                  <source type="image/webp" srcset="src/images/optimized/avatar-3-mobile@1x.webp 1x, src/images/optimized/avatar-3-mobile@2x.webp 2x" width="90" height="90">
+                  <img src="src/images/optimized/avatar-3-mobile@1x.jpg" srcset="src/images/optimized/avatar-3-mobile@2x.jpg 2x" width="90" height="90" alt="Аватарка выпускника">
                 </picture>
               </div>
               <div class="community__avatar community__avatar--mask">
                 <picture>
-                  <source type="image/jpeg" media="(min-width: 1375px)" srcset="src/images/avatar-4.jpg 1x, src/images/avatar-4.jpg 2x" width="120" height="120">
-                  <img src="src/images/avatar-4-mobile.jpg" srcset="src/images/avatar-4-mobile.jpg 2x" width="90" height="90" alt="Фотография Миши">
+                  <source type="image/webp" media="(min-width: 1375px)" srcset="src/images/optimized/avatar-4@1x.webp 1x, src/images/optimized/avatar-4@2x.webp 2x" width="120" height="120">
+                  <source type="image/jpeg" media="(min-width: 1375px)" srcset="src/images/optimized/avatar-4@1x.jpg 1x, src/images/optimized/avatar-4@2x.jpg 2x" width="120" height="120">
+                  <source type="image/webp" srcset="src/images/optimized/avatar-4-mobile@1x.webp 1x, src/images/optimized/avatar-4-mobile@2x.webp 2x" width="90" height="90">
+                  <img src="src/images/optimized/avatar-4-mobile@1x.jpg" srcset="src/images/optimized/avatar-4-mobile@2x.jpg 2x" width="90" height="90" alt="Аватарка выпускника">
                 </picture>
               </div>
-              <a class="community__avatar community__avatar--add" href="#" target="_blank"></a>
+              <a class="community__avatar community__avatar--add" href="#section-form" aria-label="Стать выпускником"></a>
             </div>
   
             <span class="community__quantity">Более 100</span> 
@@ -246,7 +269,7 @@
               </span>
               <p>419 000 ₸ <span>552 000 ₸</span></p>
             </div>
-            <a class="button" href="#" target="_blank" tabindex="0">Купить курс</a>
+            <a class="button button--state" href="#section-form" target="_blank" tabindex="0">Купить курс</a>
           </div>
         </div>
       </section>
@@ -258,36 +281,36 @@
             <p class="work__description">
               Начните работать в&nbsp;крупнейших <br/>компаниях индустрии
             </p>
-            <a href="#" class="button">Присоединиться</a>
+            <a class="button button--state" href="#section-form">Присоединиться</a>
           </div>
 
           <ul class="work__list">
             <li class="work__item work__item--sber">
-              <img src="src/images/sber.svg" width="138" height="138" alt="Сбер">
+              <img src="src/images/optimized/sber.svg" width="138" height="138" alt="Сбер">
             </li>
             <li class="work__item work__item--mts">
-              <img src="src/images/mts.svg" width="138" height="138" alt="МТС">
+              <img src="src/images/optimized/mts.svg" width="138" height="138" alt="МТС">
             </li>
             <li class="work__item work__item--vtb">
-              <img src="src/images/vtb.svg" width="138" height="138" alt="ВТБ">
+              <img src="src/images/optimized/vtb.svg" width="138" height="138" alt="ВТБ">
             </li>
             <li class="work__item work__item--mish">
-              <img src="src/images/mish.svg" width="138" height="138" alt="mish">
+              <img src="src/images/optimized/mish.svg" width="138" height="138" alt="Mish">
             </li>
             <li class="work__item work__item--chulakov">
-              <img src="src/images/chulakov.svg" width="138" height="138" alt="Chulakov">
+              <img src="src/images/optimized/chulakov.svg" width="138" height="138" alt="Chulakov">
             </li>
             <li class="work__item work__item--vc">
-              <img src="src/images/vc.svg" width="138" height="138" alt="vc.ru">
+              <img src="src/images/optimized/vc.svg" width="138" height="138" alt="VC.ru">
             </li>
             <li class="work__item work__item--epam">
-              <img src="src/images/epam.svg" width="138" height="138" alt="EPAM">
+              <img src="src/images/optimized/epam.svg" width="138" height="138" alt="EPAM">
             </li>
             <li class="work__item work__item--sportmaster">
-              <img src="src/images/sportmaster.svg" width="138" height="138" alt="Спортмастер">
+              <img src="src/images/optimized/sportmaster.svg" width="138" height="138" alt="Спортмастер">
             </li>
             <li class="work__item work__item--rustore">
-              <img src="src/images/rustore.svg" width="138" height="138" alt="RuStore">
+              <img src="src/images/optimized/rustore.svg" width="138" height="138" alt="RuStore">
             </li>
           </ul>
         </div>
@@ -301,13 +324,15 @@
           <div class="certificate__content">
             <h2 class="certificate__title">Получи сертификат <br />об успешном <br/>завершении курса</h2>
             <p class="certificate__description">Обучение ведётся на&nbsp;основании лицензии <br/>государственного образца</p>
-            <a href="#" class="button">Начать учиться</a>
+            <a class="button button--state" href="#section-form">Начать учиться</a>
           </div>
       
           <div class="certificate__image">
             <picture>
-              <source type="image/jpeg" media="(min-width: 700px)" srcset="src/images/cert.jpg 1x, src/images/cert.jpg 2x" width="660" height="440">
-              <img src="src/images/cert-mobile.jpg" srcset="src/images/cert-mobile.jpg 2x" width="448" height="300" alt="Сертификат об окончании курса">
+              <source type="image/webp" media="(min-width: 700px)" srcset="src/images/optimized/cert@1x.webp 1x, src/images/optimized/cert@2x.webp 2x" width="660" height="440">
+              <source type="image/jpeg" media="(min-width: 700px)" srcset="src/images/optimized/cert@1x.jpg 1x, src/images/optimized/cert@2x.jpg 2x" width="660" height="440">
+              <source type="image/webp" srcset="src/images/optimized/cert-mobile@1x.webp 1x, src/images/optimized/cert-mobile@2x.webp 2x" width="448" height="300">
+              <img src="src/images/optimized/cert-mobile@1x.jpg" srcset="src/images/optimized/cert-mobile@2x.jpg 2x" width="448" height="300" alt="Пример сертификата">
             </picture>
           </div>
         </div>
@@ -315,7 +340,7 @@
 
       <section class="form">
         <div class="form__wrapper">
-          <h2 class="form__title">Сделайте апгрейд карьеры</h2>
+          <h2 class="form__title" id="section-form">Сделайте апгрейд карьеры</h2>
           <form class="form__contact" id="form-contact" action="https://echo.htmlacademy.ru" method="post" novalidate>
 
             <label class="form__label">
@@ -336,62 +361,61 @@
               <span class="error-message" id="email-error"></span>
             </label>
 
-            <button class="button" type="submit">Оставить заявку</button>
+            <button class="button button--state" type="submit">Оставить заявку</button>
           </form>
           <p>Нажимая кнопку &laquo;Оставить заявку&raquo;, вы&nbsp;подтверждаете <br/>согласие на&nbsp;обработку персональных данных</p>
         </div>
       </section>
 
       <section class="footer-nav">
+        <h2 class="visually-hidden">Навигация по сайту в конце страницы</h2>
         <div class="footer-nav__wrapper">
 
           <div class="footer-nav__content">
             <a class="footer-nav__logo" href="#">
-              <img src="/src/images/logo-footer.svg" width="267" height="59" alt="Spreent логотип" />
+              <img src="/src/images/optimized/logo-footer.svg" width="267" height="59" alt="Spreent логотип" />
             </a>
-      
-            <nav class="footer-nav__links">  <!-- del -->
-              <ul class="footer-nav__list">
-                <li class="footer-nav__item">
-                  <a href="#">
-                    Об академии
-                  </a>
-                </li>
-                <li class="footer-nav__item">
-                  <a href="#">
-                    Корпоративное обучение
-                  </a>
-                </li>
-                <li class="footer-nav__item">
-                  <a href="#">
-                    Оплата
-                  </a>
-                </li>
-                <li class="footer-nav__item">
-                  <a href="#">
-                    Личный кабинет
-                  </a>
-                </li>
-                <li class="footer-nav__item">
-                  <a href="#">
-                    Связаться с нами
-                  </a>
-                </li>
-                <li class="footer-nav__item">
-                  <a href="#">
-                    Политика конфиденциальности
-                  </a>
-                </li>
-              </ul>
-            </nav>
+
+            <ul class="footer-nav__list">
+              <li class="footer-nav__item">
+                <a class="footer-nav__link footer-nav__link--current" href="#">
+                  Об академии
+                </a>
+              </li>
+              <li class="footer-nav__item">
+                <a class="footer-nav__link" href="#">
+                  Корпоративное обучение
+                </a>
+              </li>
+              <li class="footer-nav__item">
+                <a class="footer-nav__link" href="#">
+                  Оплата
+                </a>
+              </li>
+              <li class="footer-nav__item">
+                <a class="footer-nav__link" href="#">
+                  Личный кабинет
+                </a>
+              </li>
+              <li class="footer-nav__item">
+                <a class="footer-nav__link" href="#">
+                  Связаться с нами
+                </a>
+              </li>
+              <li class="footer-nav__item">
+                <a class="footer-nav__link" href="#">
+                  Политика конфиденциальности
+                </a>
+              </li>
+            </ul>
           </div>
       
           <div class="footer-nav__bottom">
             <p>Академия Богдана Гончаренко © 2024</p>
       
-            <a class="footer-nav__logo-dev" href="#">
+            <a class="footer-nav__logo-dev" href="https://mish.design/ru" target="_blank">
               <span>by</span>
-              <img src="/src/images/logo-mish.svg" width="85" height="30" alt="Mish логотип" />
+              <img src="/src/images/optimized/logo-mish.svg" width="85" height="30" alt="Mish логотип" />
             </a>
           </div>
 
