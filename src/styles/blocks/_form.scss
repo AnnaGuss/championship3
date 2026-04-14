@@ -6,7 +6,6 @@
   width: 100%;
   min-width: 480px;
   margin: 241px auto 90px;
-  // background-color: #d76ed5; // del
   padding: 0;
 }
 
@@ -54,7 +53,6 @@
   border-radius: 100px;
   margin: 0;
   outline: none;
-  // transition: border-color 0.3s;
   background-color: rgba(vars.$base-color, 0.2);
   transition: all 0.3s ease;
 }
@@ -69,6 +67,11 @@
 
 .form__input:active {
   transform: scale(0.99);
+}
+
+.form__input:disabled {
+  pointer-events: none;
+  opacity: 0.45;
 }
 
 .form__contact .button {

@@ -41,14 +41,12 @@ navToggle.addEventListener('click', () => {
 });
 
 
-
 function updateTabIndex(e) {
   buttonHeader.tabIndex = e.matches ? 2 : 0;
 }
 
 updateTabIndex(media);
 media.addEventListener('change', updateTabIndex);
-
 
 
 function updateInert(e) {

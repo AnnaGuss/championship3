@@ -29,7 +29,7 @@ document.getElementById('form-contact').addEventListener('submit', (e) => {
   }
 
 
-  const phonePattern = /^[0-9\s\+\-\(\)]+$/;
+  const phonePattern = /^[0-9\s+\-()]+$/;
   if (!phoneInput.value.trim()) {
     phoneError.textContent = 'Пожалуйста, введите номер телефона';
     phoneInput.classList.add('invalid');
