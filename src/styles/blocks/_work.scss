@@ -21,6 +21,16 @@
   line-height: 0.98;
   letter-spacing: -0.4px;
   padding-bottom: 19px;
+
+  opacity: 0;
+  transform: translateY(60px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+  will-change: transform, opacity;
+}
+
+.work__title.is-visible {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .work__description {

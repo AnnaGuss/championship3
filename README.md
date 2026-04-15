@@ -104,4 +104,6 @@ championship3/
 **Anna Gusarova**
 https://github.com/AnnaGuss
 
-
+* Шрифты: Loos, LoosWide, Manrope
+* Дизайн, макет: Mish
+* Организатор: html Academy

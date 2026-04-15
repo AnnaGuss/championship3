@@ -107,11 +107,6 @@
   }
 }
 
-.community__quantity {
-  padding-top: 31px;
-  padding-bottom: 5px;
-}
-
 .community__quantity,
 .community__number {
   font-size: 90px;
@@ -119,6 +114,23 @@
   font-weight: 500;
   line-height: 1;
   letter-spacing: -5.4px;
+}
+
+.community__quantity {
+  padding-top: 31px;
+  padding-bottom: 5px;
+}
+
+.community__number {
+  opacity: 0;
+  transform: translateY(60px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+  will-change: transform, opacity;
+}
+
+.community__number.is-visible {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .community__statistics {
